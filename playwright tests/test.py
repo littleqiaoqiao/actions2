@@ -7,4 +7,4 @@ with sync_playwright() as p:
     page = context.new_page()
     page.goto("https://google.com")
     context.close()
-    browser.close()
+    browser.close() #
