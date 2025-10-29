@@ -1,13 +1,11 @@
-name: CI/CD Workflow
-
 on: push
 
 jobs:
     job1:
         steps:
-            -run: pwd
-            -run: ls
+        - run: pwd
+        - run: ls
 
     job2:
         steps:
-            -run: node --version
+        - run: node --version
