@@ -3,13 +3,11 @@ name: CI/CD Workflow
 on: push
 
 jobs:
-    runs-on: ubuntu-latest
     job1:
         steps:
-            - name: Step 1
-              run: git --version
+            -run: pwd
+            -run: ls
 
     job2:
         steps:
-            - name: Step 2
-              run: echo "This is job 2"
+            -run: node --version
