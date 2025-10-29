@@ -6,5 +6,11 @@ with sync_playwright() as p:
     context = browser.new_context()
     page = context.new_page()
     page.goto("https://google.com")
+
+
+    page.locator("#kw").fill("Playwright")
+    page.locator("#idid").fill("Playwright")
+
+
     context.close()
     browser.close() #
