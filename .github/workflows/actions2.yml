@@ -3,6 +3,7 @@ name: CI/CD Workflow
 on: push
 
 jobs:
+    runs-on: ubuntu-latest
     job1:
         steps:
             - name: Step 1
