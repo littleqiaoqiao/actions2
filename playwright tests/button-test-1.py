@@ -1,4 +1,4 @@
-from playwright_sync_api import sync_playwright
+from playwright.sync_api import sync_playwright
 
 with sync_playwright() as p:
 
@@ -13,4 +13,4 @@ with sync_playwright() as p:
 
 
     context.close()
-    browser.close() #
+    browser.close() 
